@@ -1,0 +1,10 @@
+[
+	{	
+		"title":"first post",
+		"url":"/get_all_posts"
+	},
+	{
+		"title":"second post",
+		"url":"/get_one_post"
+	}
+]
