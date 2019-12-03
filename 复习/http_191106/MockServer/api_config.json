@@ -1,0 +1,136 @@
+[
+  {
+    "request":
+    {
+      "uri": "/hello",
+      "method":"get"
+
+    },
+    "response":
+    {
+      "text": "kitty"
+    }
+  },
+  {
+    "request":
+      {
+        "uri": "/posts",
+        "method": "get"
+      },
+    "response":
+      {
+        "json":
+              [
+                {
+                  "title": "first post",
+                  "uri": "/posts/1"
+                 },
+                {
+                  "title": "second post",
+                  "uri": "/posts/2"
+                }
+              ]}
+  },
+  {
+    "request":
+      {
+        "uri": "/posts/1",
+        "method": "GET"
+      },
+    "response":
+      {
+        "file": "get_posts_1.json"
+      }
+  },
+  {
+    "request":
+      {
+        "uri": "/posts/2",
+        "method": "get"
+      },
+    "response":
+      {
+       "file": "get_posts_2.json"
+      }
+  },
+  {
+    "request":
+      {
+        "uri": "/posts/3",
+         "method": "get"
+      },
+    "response":
+      {
+        "file": "get_posts_3.json"
+      }
+  },
+  {
+    "request":{
+        "uri": "/posts",
+        "method": "post",
+        "json":
+          {
+            "title":"food",
+            "comment":"milk is very teasty!"
+          }
+      },
+    "response":
+      {
+        "text": "true"
+      }
+  },
+  {
+    "request":
+      {
+        "uri": "/posts/template",
+        "method": "post",
+        "file":
+        {
+          "json": "create_template.json"
+        }
+      },
+    "response":
+      {
+        "file":"create_template_response.json"
+      }
+  },
+  {
+    "request":
+      {
+        "uri": "/posts/thumbil",
+        "method": "post",
+        "file":"create_thumbil.json"
+
+      },
+    "response":
+      {
+        "file":"create_thumbil_response.json"
+      }
+  },
+  {
+    "request":
+      {
+        "uri": "/posts/2",
+        "method": "put",
+        "file": "edit_post1.json"
+      },
+    "response":
+      {
+        "json":
+          {
+            "status": "fixed successfully"
+          }
+      }
+  },
+  {
+    "request":
+    {
+      "uri": "/posts/1",
+      "method": "delete"
+    },
+    "response":
+    {
+      "text":"delete success !"
+    }
+  }
+]
