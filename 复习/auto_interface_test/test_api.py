@@ -4,6 +4,7 @@
 #coding:utf-8
 from flask import Flask
 from flask_restful import Api,request
+import json
 
 server=Flask(__name__)
 
@@ -23,6 +24,9 @@ def login():
     else:
         result = {"code": 404, "message": "用户名或密码不能为空！"}
 
+    #如果要str格式结果，需要转化，也可以不用转化
+    # result=json.dumps(result)
+    # print(type(result))
     return result
 
 if __name__=="__main__":
