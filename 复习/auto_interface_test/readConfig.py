@@ -27,4 +27,3 @@ if __name__ == "__main__":
     print("EMAIL中的开关on_off值为：", ReadConfig().get_email(name="on_off"))
 
 
-
