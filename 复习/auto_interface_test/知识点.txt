@@ -1,4 +1,0 @@
-#需要知道的知识点
-#2019.12.04
-1.__file__理解
-https://blog.csdn.net/mingyuli/article/details/80956951
